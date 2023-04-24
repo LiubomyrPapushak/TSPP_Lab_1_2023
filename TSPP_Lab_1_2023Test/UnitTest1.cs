@@ -1,6 +1,4 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace TSPP_Lab_1_2023Test
+namespace TestProject3
 {
     [TestClass]
     public class UnitTest1
@@ -8,19 +6,11 @@ namespace TSPP_Lab_1_2023Test
         [TestMethod]
         public void TestMethod1()
         {
-            //Тестовий набір данних
-            uint S = 3680;
-            uint hh = 1;
-            uint mm = 1;
-            uint ss = 20;
-            //Змінні на тестування
-            uint thh = TSPP_Lab_1_2023.Program.TimeConvH(S);
-            uint tmm = TSPP_Lab_1_2023.Program.TimeConvM(S);
-            uint tss = TSPP_Lab_1_2023.Program.TimeConvS(S);
-            //Перевірка
-            Assert.AreEqual(hh, thh);
-            Assert.AreEqual(mm, tmm);
-            Assert.AreEqual(ss, tss);
+            int a = 4;
+            double V = ConsoleApp1_24.Program.dobutok(a);
+            double S = ConsoleApp1_24.Program.plocha(a);
+            Assert.AreEqual(64, V);
+            Assert.AreEqual(96, S);
         }
     }
 }
